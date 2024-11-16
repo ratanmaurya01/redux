@@ -1,0 +1,26 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oregano:ital@0;1&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Add this to your CSS file or in a <style> tag */
+.gradient-border {
+    position: relative;
+    padding: 2px; /* Adjust the padding to control the border width */
+    background: radial-gradient(circle farthest-side at 0% 100%, #00ccb1, transparent),
+                radial-gradient(circle farthest-side at 100% 0%, #7b61ff, transparent),
+                radial-gradient(circle farthest-side at 100% 100%, #ffc414, transparent),
+                radial-gradient(circle farthest-side at 0% 0%, #1ca0fb, #141316);
+    border-radius: 8px; /* Adjust border radius if needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adjust shadow properties */
+}
+
+.gradient-border > div {
+    background: white; /* This will be the inner background of the element */
+    border-radius: 6px; /* Adjust to match or slightly less than outer radius */
+    padding: 20px; /* Adjust padding to control content spacing */
+}
+
